@@ -62,7 +62,6 @@ public class SummerCamp {
         daySubjects.put(DayOfWeek.THURSDAY, Arrays.asList("Arts", "Music", "Sports"));
         daySubjects.put(DayOfWeek.FRIDAY, Arrays.asList("Sports", "Science", "Hindi"));
 		
-//		}
         Arrays.stream(student).forEach(st->{
         	Map<String, Integer> subjectCount = new HashMap<>();
             Arrays.asList("Hindi", "Music", "Sports", "Arts", "Science").forEach(sub -> subjectCount.put(sub, 0));

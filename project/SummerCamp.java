@@ -50,9 +50,7 @@ public class SummerCamp {
 			student[i]=new Student(name, id, group, attendance);
 		}
 		
-//		for(int i=0;i<n;i++) {
-//			System.out.println(student[i].name+" "+student[i].id+" "+student[i].group+" "+student[i].attendance);
-		
+
 		List<LocalDate> workingDays=start.datesUntil(end.plusDays(1))
 				.filter(d->!(d.getDayOfWeek()==DayOfWeek.SATURDAY ||d.getDayOfWeek()==DayOfWeek.SUNDAY))
 				.collect(Collectors.toList());
